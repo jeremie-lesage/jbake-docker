@@ -1,4 +1,4 @@
-FROM java:8-jre
+FROM java:8-alpine
 MAINTAINER Jeremie Lesage <jeremie.lesage@gmail.com>
 
 ENV JBAKE_VERSION=2.4.0 \
