@@ -1,6 +1,9 @@
 FROM java:8-alpine
 MAINTAINER Jeremie Lesage <jeremie.lesage@gmail.com>
 
+RUN apk add --update curl && \
+    rm -rf /var/cache/apk/*
+
 ENV JBAKE_VERSION=2.4.0 \
     JBAKE_SHA1=e53633c6cd6ba714a8876cadc02fe41e7790c5db
 
