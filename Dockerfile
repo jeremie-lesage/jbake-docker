@@ -9,8 +9,8 @@ RUN curl http://jbake.org/files/jbake-${JBAKE_VERSION}-bin.zip -o /root/jbake-bi
     && unzip /root/jbake-bin.zip -d /opt \
     && rm /root/jbake-bin.zip
 
-ENV JBAKE_HOME=/opt/jbake-$JBAKE_VERSION/ \
-    PATH=$JBAKE_HOME/bin:$PATH
+ENV JBAKE_HOME /opt/jbake-$JBAKE_VERSION/
+ENV PATH $JBAKE_HOME/bin:$PATH
 
 RUN mkdir -p "/data"
 WORKDIR /data
