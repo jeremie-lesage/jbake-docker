@@ -2,6 +2,8 @@
 
 Unofficial Docker Image for [JBake](http://jbake.org/).
 
+[![](https://images.microbadger.com/badges/image/jeci/jbake-docker.svg)](https://microbadger.com/images/jeci/jbake-docker "Get your own image badge on microbadger.com")
+
 ## Quick Start
 
 ```bash
