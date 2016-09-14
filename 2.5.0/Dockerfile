@@ -9,7 +9,7 @@ RUN git clone https://github.com/jbake-org/jbake.git jbake.git \
     && mvn package -Dmaven.test.skip=true \
     && unzip dist/jbake-$JBAKE_VERSION-bin.zip -d /opt \
     && cd .. \
-    && rm -rf /jbake.git/ /root/.m2/
+    && rm -rf /jbake.git/ /root/.m2/repository/
 
 ENV JBAKE_HOME /opt/jbake-$JBAKE_VERSION/
 ENV PATH $JBAKE_HOME/bin:$PATH
